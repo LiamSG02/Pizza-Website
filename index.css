@@ -3,7 +3,7 @@
 
 .jumbotron {
 	background-image: url("pizzabanner.jpg");
-	height: auto;
+	background-size: cover;
 }
 
 /* change the background color */	
