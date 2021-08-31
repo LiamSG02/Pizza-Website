@@ -4,6 +4,7 @@
 .jumbotron {
 	background-image: url("pizzabanner.jpg");
 	background-size: cover;
+	height: 400px; 
 }
 
 /* change the background color */	
@@ -25,4 +26,7 @@
     color: #ffffff;
 	
 }
-	
+
+body {
+	background-color: black;
+}
