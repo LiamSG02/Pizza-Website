@@ -113,6 +113,13 @@ header .navigation li a:hover {
 	color: #CA2627
 }
 
+button {
+	color: #fff;
+	background-color: #117964;
+	border-radius: 10px;
+	padding: 5px;
+}
+
 /*Food menu Styling */
 .food-menu-heading {
 	font-size: 4rem;
