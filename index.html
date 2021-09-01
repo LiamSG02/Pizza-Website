@@ -13,26 +13,13 @@
 </head>
 
 <body>
-
-<nav class="navbar navbar-expand-sm navbar-custom">
-  <!-- Brand/logo -->
-  <a class="navbar-brand" href="#">
-	<img src="Logo.svg" alt="Logo" style="width: 100px;">
-	</a>
-  
-  <!-- Links -->
-  <ul class="navbar-nav mx-auto" >
-    <li class="nav-item">
-      <a class="nav-link" href="#">Menu</a>
-    </li>
-  
-  </ul>
-</nav>
-
+	
 <header>
-<a href="#" class="logo">Logo<span>.</span></a>
-	<ul class="navigation"></ul>
+<a href="#" class="logo"><img src="Logo.svg" alt="Logo" width="100px; "><span></span></a>
+	<ul class="navigation">
 	<li><a href="#">Menu</a></li>
+	<li><a href="#">Cart</a></li>
+	</ul>
 </header>
 
 <!-- Banner / Jumbotron -->
@@ -45,7 +32,113 @@
 	</div>	
 </section>
 
+	<br>
 	
+<section id="food-menu">
+	<h2 class="food-menu-heading">
+		Pizza Menu	
+	</h2>
+	<div class="food-menu-container container">
+		<div class="food-menu-item">
+			<div class="food-image">
+				<img src="pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
+			</div>
+			<div class="food-description">
+				<h2 class="food-title">Margherita</h2>
+				<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
+				<p class="food-price">Price: 99 SEK</p>
+			</div>
+		</div>
+		<div class="food-menu-item">
+			<div class="food-image">
+				<img src="pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
+			</div>
+			<div class="food-description">
+				<h2 class="food-title">Altono</h2>
+				<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
+				<p class="food-price">Price: 99 SEK</p>
+			</div>
+		</div>
+		<div class="food-menu-item">
+			<div class="food-image">
+				<img src="pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
+			</div>
+			<div class="food-description">
+				<h2 class="food-title">Napolitana</h2>
+				<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
+				<p class="food-price">Price: 99 SEK</p>
+			</div>
+		</div>
+		<div class="food-menu-item">
+			<div class="food-image">
+				<img src="pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
+			</div>
+			<div class="food-description">
+				<h2 class="food-title">Big Ben</h2>
+				<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
+				<p class="food-price">Price: 99 SEK</p>
+			</div>
+		</div>
+		<div class="food-menu-item">
+			<div class="food-image">
+				<img src="pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
+			</div>
+			<div class="food-description">
+				<h2 class="food-title">Bolognese</h2>
+				<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
+				<p class="food-price">Price: 99 SEK</p>
+			</div>
+		</div>
+		<div class="food-menu-item">
+			<div class="food-image">
+				<img src="pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
+			</div>
+			<div class="food-description">
+				<h2 class="food-title">Toscana</h2>
+				<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
+				<p class="food-price">Price: 99 SEK</p>
+			</div>
+		</div>
+		<div class="food-menu-item">
+			<div class="food-image">
+				<img src="pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
+			</div>
+			<div class="food-description">
+				<h2 class="food-title">Gorgonzola</h2>
+				<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
+				<p class="food-price">Price: 99 SEK</p>
+			</div>
+		</div>
+		<div class="food-menu-item">
+			<div class="food-image">
+				<img src="pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
+			</div>
+			<div class="food-description">
+				<h2 class="food-title">Valentino</h2>
+				<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
+				<p class="food-price">Price: 99 SEK</p>
+			</div>
+		</div>
+		<div class="food-menu-item">
+			<div class="food-image">
+				<img src="pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
+			</div>
+			<div class="food-description">
+				<h2 class="food-title">Picasso</h2>
+				<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
+				<p class="food-price">Price: 99 SEK</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<script type="text/javascript">
+	window.addEventListener('scroll', function(){
+		const header = document.querySelector('header');
+		header.classList.toggle("sticky", window.scrollY > 0);
+	});
+</script>	
 	
 </body>
 </html>
