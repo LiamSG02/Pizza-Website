@@ -121,6 +121,8 @@ button {
 }
 
 /*FOOD MENU STYLING */
+/*FOOD MENU STYLING */
+/*FOOD MENU STYLING */
 .food-menu-heading {
 	font-size: 4rem;
 	text-align: center;
@@ -172,4 +174,27 @@ button {
 	font-weight: 700;
 }
 
+/* ABOUT US PAGEEEEEEE */
+/* ABOUT US PAGEEEEEEE */
+/* ABOUT US PAGEEEEEEE */
+section {
+	padding: 100px;
+}
 
+.row {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.row .col150 {
+	position: relative;
+	width: 48%
+}
+
+.titleText {
+	color: #111;
+	font-size: 2em;
+	font-weight: 300;
+}
