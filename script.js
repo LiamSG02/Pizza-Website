@@ -1,4 +1,0 @@
-function alerting()
-{
-    alert("hello!")
-}
