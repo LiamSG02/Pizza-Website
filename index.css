@@ -121,6 +121,11 @@ button {
 	padding: 5px;
 }
 
+footer {
+	background-color: #665E5F;
+	
+}
+
 /*FOOD MENU STYLING */
 /*FOOD MENU STYLING */
 /*FOOD MENU STYLING */
@@ -179,7 +184,9 @@ button {
 /* ABOUT US PAGEEEEEEE */
 /* ABOUT US PAGEEEEEEE */
 section {
-	padding: 100px;
+	padding-top: 100px;
+	padding-left: 300px;
+	padding-right: 300px;
 }
 
 .row {
