@@ -1,0 +1,173 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+p {
+	font-weight: 300;
+	color: #111;
+}
+
+
+.banner {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	background: url("pizzaban2.jpg");
+	background-size: cover;
+}
+
+.banner .content {
+	max-width: 900px;
+	text-align: center;
+}
+
+.banner .content h2 {
+	font-size: 5em;
+	color: #fff; 
+}
+
+.banner .content p {
+	font-size: 1em;
+	color: #fff;
+}
+
+.btn {
+	font-size: 1em;
+	color: #fff;
+	background: #CA2627;
+	display: inline-block;
+	padding: 10px 30px; 
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0 ;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center;
+	transition: 0.5s;
+}
+
+header.sticky {
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,05);
+}
+
+header .logo {
+	color: #fff;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: 0
+	
+}
+
+header.sticky .logo {
+	color: #111;
+}
+
+header .logo span {
+	color: #CA2627
+}
+
+header .navigation {
+	position: relative;
+	display: flex;
+}
+
+header .navigation li {
+	list-style: none; 
+	margin-left: 30px;
+}
+
+header .navigation li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
+
+header.sticky .navigation li a {
+	color: #111;
+}
+
+header .navigation li a:hover {
+	color: #CA2627
+}
+
+button {
+	color: #fff;
+	background-color: #117964;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+/*FOOD MENU STYLING */
+.food-menu-heading {
+	font-size: 4rem;
+	text-align: center;
+	font-weight: 400;
+	color: #666;
+}
+
+.food-menu-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+	display: block;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.food-menu-item {
+	display: flex;
+	flex: 1 1 600px;
+	justify-content: space-evenly;
+	margin-bottom: 3rem;
+}
+
+.food-description {
+	margin: auto 1.5rem;
+}
+
+.food-title {
+	font-size: 2.2rem;
+	font-weight: 400;
+	color: #444;
+}
+
+.food-description p {
+	font-size: 1.4rem;
+	color: #555;
+	font-weight: 500;
+
+}
+
+.food-description .food-price {
+	color: #117964;
+	font-weight: 700;
+}

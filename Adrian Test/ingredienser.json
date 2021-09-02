@@ -1,0 +1,60 @@
+{
+    "ingrediens": [
+        {
+            "iname": "köttfärssås",
+            "price": 10
+        },
+        {
+            "iname": "räkor",
+            "price": 10
+        },
+        {
+            "iname": "musslor",
+            "price": 10
+        },
+        {
+            "iname": "skinka",
+            "price": 10
+        },
+        {
+            "iname": "lufttorad skinka",
+            "price": 10
+        },
+        {
+            "iname": "peperoni",
+            "price": 10
+        },
+        {
+            "iname": "tomatsås",
+            "price": 5
+        },
+        {
+            "iname": "tomat",
+            "price": 5
+        },
+        {
+            "iname": "soltorkad tomat",
+            "price": 5
+        },
+        {
+            "iname": "ost",
+            "price": 5
+        },
+        {
+            "iname": "mozzarella",
+            "price": 5
+        },
+        {
+            "iname": "parmesan",
+            "price": 5
+        },
+        {
+            "iname": "lök",
+            "price": 5
+        },
+        {
+            "iname": "vitlök",
+            "price": 5
+        }
+    ]
+}

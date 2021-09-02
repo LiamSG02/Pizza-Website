@@ -1,27 +1,61 @@
 
-let ingredienser = ["köttfärssås", "tonfisk", "lök", "sardeller", "kapris", "oliver", "bacon", "ägg", "räkor", "kronärtskocka", "vitlök", "skinka", "gorgonzola", "tomat", "peperoni", "mozzarella", "parmesan", "soltorkad tomat", "basilika", "musslor", "crabfish", "svart kaviar"];
+let data;
 
-let vald = [];
+/* window.onload = function () {
+    getIngredienser();
+}; */
 
-function myFunction(name){
+async function getIngredienser() {
+    let url = 'ingredienser.json';
+    try {
+        let res = await fetch(url);
+        return await res.json();
+    } catch (error) {
+        console.log(error);
+    }
+}
+async function renderIngredienser() {
+    let ingredienser = await getIngredienser();
+    let html = '';
+    ingredienser.forEach(ingrediens => {
+        let htmlSegment = `<div class="ingrediens">
+                            <h2>${ingrediens.iname}</h2>
+                            <p>${ingrediens.price}</p>
+                            <hr>
+                        </div>`;
+
+        html += htmlSegment;
+    });
+
+    let container = document.querySelector('.container');
+    container.innerHTML = html;
+}
+
+function addItem(name) {
+
+}
+function delItem(name) {
+
+}
+
+/* function checkBoxClick(name) {
 
     var checkBox = document.getElementById(name);
-    console.log(checkBox)
-    
-    if (checkBox.checked == true){
+
+    if (checkBox.checked == true) {
         vald.push(name);
-        alert(vald);
-    } else{
-        for (i in vald){
-            while (i <= vald.length){
-                if (name == vald[i]){
+        console.log(vald);
+    } else {
+        for (i in vald) {
+            while (i <= vald.length) {
+                if (name == vald[i]) {
                     vald.splice(i, 1);
-                    alert(vald)
+                    console.log(vald)
                     return
-                } else{
+                } else {
                     i++
                 }
             }
         }
     }
-}
+} */

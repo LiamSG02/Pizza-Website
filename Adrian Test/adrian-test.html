@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="adrian-index.css">
+    <script src="script.js"></script>
     <title>Document</title>
 </head>
 
@@ -42,13 +43,13 @@
     </div>
     <br />
 
-    <input type="checkbox" id="köttfärssås" onclick="myFunction('köttfärssås')">Köttfärssås<br />
-    <input type="checkbox" id="tonfisk" onclick="myFunction('tonfisk')">Tonfisk<br />
-    <input type="checkbox" id="lök" onclick="myFunction('lök')">Lök<br />
-    <input type="checkbox" id="kapris" onclick="myFunction('kapris')">Kapris<br />
-    <input type="checkbox" id="oliver" onclick="myFunction('oliver')">Oliver<br />
+    <button type="button" onclick="addItem('köttfärssås')" class="btn">+</button><p>KÖTTFÄRSSÅS</p>
+    <button type="button" onclick="delItem('köttfärssås')" class="btn">-</button>
 
-    <script src="script.js"></script>
+    <button type="button" onclick="renderIngredienser()" class="btn">-</button>
+
+    <div class="container"></div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
