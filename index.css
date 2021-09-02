@@ -198,3 +198,15 @@ section {
 	font-size: 2em;
 	font-weight: 300;
 }
+
+.titleText span {
+	color: #ff0157;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.row .col150 .imgBx {
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+}
