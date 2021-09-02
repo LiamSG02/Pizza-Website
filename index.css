@@ -7,6 +7,7 @@
 	padding: 0;
 	box-shadow: border-box;
 	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
 }
 
 p {
@@ -120,6 +121,13 @@ button {
 	padding: 5px;
 }
 
+footer {
+	background-color: #665E5F;
+	
+}
+
+/*FOOD MENU STYLING */
+/*FOOD MENU STYLING */
 /*FOOD MENU STYLING */
 .food-menu-heading {
 	font-size: 4rem;
@@ -172,4 +180,50 @@ button {
 	font-weight: 700;
 }
 
+/* ABOUT US PAGEEEEEEE */
+/* ABOUT US PAGEEEEEEE */
+/* ABOUT US PAGEEEEEEE */
+section {
+	padding-top: 100px;
+	padding-left: 300px;
+	padding-right: 300px;
+}
 
+.row {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.row .col50 {
+	position: relative;
+	width: 48%
+}
+
+.titleText {
+	color: #111;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.titleText span {
+	color: #CA2627;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+}
+
+.row .col50 .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
