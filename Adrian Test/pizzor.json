@@ -1,0 +1,229 @@
+{
+    "pizza": [
+        {
+            "pname": "margherita",
+            "price": 79,
+            "ingredienser": [
+                {
+                    "iname": "tomatsås"
+                },
+                {
+                    "iname": "riven-ost"
+                }
+            ]
+        },
+        {
+            "pname": "altono",
+            "price": 79,
+            "ingredienser": [
+                {
+                    "iname": "tomatsås"
+                },
+                {
+                    "iname": "riven-ost"
+                },
+                {
+                    "iname": "tonfisk"
+                },
+                {
+                    "iname": "lök"
+                }
+            ]
+        },
+        {
+            "pname": "napolitana",
+            "price": 79,
+            "ingredienser": [
+                {
+                    "iname": "tomatsås"
+                },
+                {
+                    "iname": "riven-ost"
+                },
+                {
+                    "iname": "sardeller"
+                },
+                {
+                    "iname": "kapris"
+                },
+                {
+                    "iname": "oliver"
+                }
+            ]
+        },
+        {
+            "pname": "big-ben",
+            "price": 79,
+            "ingredienser": [
+                {
+                    "iname": "tomatsås"
+                },
+                {
+                    "iname": "riven-ost"
+                },
+                {
+                    "iname": "bacon"
+                },
+                {
+                    "iname": "lök"
+                },
+                {
+                    "iname": "ägg"
+                },
+                {
+                    "iname": "oliver"
+                }
+            ]
+        },
+        {
+            "pname": "bolognese",
+            "price": 79,
+            "ingredienser": [
+                {
+                    "iname": "tomatsås"
+                },
+                {
+                    "iname": "riven-ost"
+                },
+                {
+                    "iname": "köttfärssås"
+                }
+            ]
+        },
+        {
+            "pname": "toscana",
+            "price": 89,
+            "ingredienser": [
+                {
+                    "iname": "tomatsås"
+                },
+                {
+                    "iname": "riven-ost"
+                },
+                {
+                    "iname": "räkor"
+                },
+                {
+                    "iname": "kronärtskocka"
+                },
+                {
+                    "iname": "lök"
+                },
+                {
+                    "iname": "vitlök"
+                }
+            ]
+        },
+        {
+            "pname": "gorgonzola",
+            "price": 89,
+            "ingredienser": [
+                {
+                    "iname": "tomatsås"
+                },
+                {
+                    "iname": "riven-ost"
+                },
+                {
+                    "iname": "skinka"
+                },
+                {
+                    "iname": "gorgonzola"
+                },
+                {
+                    "iname": "tomat"
+                }
+            ]
+        },
+        {
+            "pname": "valentino",
+            "price": 98,
+            "ingredienser": [
+                {
+                    "iname": "tomatsås"
+                },
+                {
+                    "iname": "riven-ost"
+                },
+                {
+                    "iname": "peperoni"
+                },
+                {
+                    "iname": "mozzarella"
+                },
+                {
+                    "iname": "parmesan"
+                },
+                {
+                    "iname": "soltorkad-tomat"
+                },
+                {
+                    "iname": "lök"
+                },
+                {
+                    "iname": "basilika"
+                }
+            ]
+        },
+        {
+            "pname": "picasso",
+            "price": 98,
+            "ingredienser": [
+                {
+                    "iname": "tomatsås"
+                },
+                {
+                    "iname": "riven-ost"
+                },
+                {
+                    "iname": "lufttorkad-skinka"
+                },
+                {
+                    "iname": "mozzarella"
+                },
+                {
+                    "iname": "parmesan"
+                },
+                {
+                    "iname": "tomat"
+                },
+                {
+                    "iname": "oliver"
+                },
+                {
+                    "iname": "paprika"
+                },
+                {
+                    "iname": "basilika"
+                }
+            ]
+        },
+        {
+            "pname": "frutti-di-mare",
+            "price": 98,
+            "ingredienser": [
+                {
+                    "iname": "tomatsås"
+                },
+                {
+                    "iname": "riven-ost"
+                },
+                {
+                    "iname": "räkor"
+                },
+                {
+                    "iname": "musslor"
+                },
+                {
+                    "iname": "crabfish"
+                },
+                {
+                    "iname": "tonfisk"
+                },
+                {
+                    "iname": "svart-kaviar"
+                }
+            ]
+        }
+    ]
+}

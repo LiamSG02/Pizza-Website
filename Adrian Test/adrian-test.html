@@ -7,15 +7,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="adrian-index.css">
-    <script src="script.js"></script>
+    <script src="add-and-del.js"></script>
     <title>Document</title>
 </head>
 
 <body style="color: white;">
 
-    <!-- Button to Open the Modal -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-        Open modal
+    <!-- Button to Open Altona Pizza -->
+    <button type="button" class="btn btn-primary" onclick="checkPizza('altono')" data-toggle="modal" data-target="#myModal">
+        Altono
+    </button>
+
+    <!-- Button to Open Margherita Pizza -->
+    <button type="button" class="btn btn-primary" onclick="checkPizza('margherita')" data-toggle="modal" data-target="#myModal">
+        Margherita
+    </button>
+
+    <!-- Button to Open Bolognese Pizza -->
+    <button type="button" class="btn btn-primary" onclick="checkPizza('bolognese')" data-toggle="modal" data-target="#myModal">
+        Bolognese
+    </button>
+
+    <!-- Button to Open Big Ben Pizza -->
+    <button type="button" class="btn btn-primary" onclick="checkPizza('big-ben')" data-toggle="modal" data-target="#myModal">
+        Big Ben
     </button>
 
     <!-- The Modal -->
@@ -26,59 +41,233 @@
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title">Modal Heading</h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" onclick="onModalClose()" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    Modal body..
+                    <!-- CONTAINER FÖR ALLA INGREDIENSER -->
+                    <center>
+                        <div class="container">
+
+                            <!-- TOMATSÅS RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="tomatsås" onclick="addItem('tomatsås')">+</button>
+                                    <button type="button" name="tomatsås" onclick="delItem('tomatsås')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Tomatsås</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-tomatsås">0</p>
+                                </div>
+                            </div>
+
+                            <!-- OST RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="riven-ost" onclick="addItem('riven-ost')">+</button>
+                                    <button type="button" name="riven-ost" onclick="delItem('riven-ost')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Riven Ost</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-riven-ost">0</p>
+                                </div>
+                            </div>
+
+                            <!-- MOZZARELLA RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="mozzarella" onclick="addItem('mozzarella')">+</button>
+                                    <button type="button" name="mozzarella" onclick="delItem('mozzarella')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Mozzarella</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-mozzarella">0</p>
+                                </div>
+                            </div>
+
+                            <!-- PARMESAN RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="parmesan" onclick="addItem('parmesan')">+</button>
+                                    <button type="button" name="parmesan" onclick="delItem('parmesan')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Parmesan</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-parmesan">0</p>
+                                </div>
+                            </div>
+
+                            <!-- GORGONZOLA RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="gorgonzola" onclick="addItem('gorgonzola')">+</button>
+                                    <button type="button" name="gorgonzola" onclick="delItem('gorgonzola')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Gorgonzola</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-gorgonzola">0</p>
+                                </div>
+                            </div>
+
+                            <!-- KÖTTFÄRSSÅS RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="köttfärssås" onclick="addItem('köttfärssås')">+</button>
+                                    <button type="button" name="köttfärssås" onclick="delItem('köttfärssås')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Köttfärssås</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-köttfärssås">0</p>
+                                </div>
+                            </div>
+
+                            <!-- BACON RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="bacon" onclick="addItem('bacon')">+</button>
+                                    <button type="button" name="bacon" onclick="delItem('bacon')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Bacon</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-bacon">0</p>
+                                </div>
+                            </div>
+
+                            <!-- SKINKA RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="skinka" onclick="addItem('skinka')">+</button>
+                                    <button type="button" name="skinka" onclick="delItem('skinka')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Skinka</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-skinka">0</p>
+                                </div>
+                            </div>
+
+                            <!-- LUFTTORKAD SKINKA RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="lufttorkad-skinka"
+                                        onclick="addItem('lufttorkad-skinka')">+</button>
+                                    <button type="button" name="lufttorkad-skinka"
+                                        onclick="delItem('lufttorkad-skinka')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Lufttorkad Skinka</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-lufttorkad-skinka">0</p>
+                                </div>
+                            </div>
+
+                            <!-- TONFISK RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="tonfisk" onclick="addItem('tonfisk')">+</button>
+                                    <button type="button" name="tonfisk" onclick="delItem('tonfisk')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Tonfisk</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-tonfisk">0</p>
+                                </div>
+                            </div>
+
+                            <!-- LÖK RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="lök" onclick="addItem('lök')">+</button>
+                                    <button type="button" name="lök" onclick="delItem('lök')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Lök</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-lök">0</p>
+                                </div>
+                            </div>
+
+                            <!-- ÄGG RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="ägg" onclick="addItem('ägg')">+</button>
+                                    <button type="button" name="ägg" onclick="delItem('ägg')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Ägg</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-ägg">0</p>
+                                </div>
+                            </div>
+
+                            <!-- OLIVER RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="oliver" onclick="addItem('oliver')">+</button>
+                                    <button type="button" name="oliver" onclick="delItem('oliver')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Oliver</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-oliver">0</p>
+                                </div>
+                            </div>
+
+                            <!-- DETTA VISAR TOTALA PRISET PÅ ALLA INGREDIENSERNA -->
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p id="total-price">0:-</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <button class="button" onclick="purchase()">PURCHASE</button>
+                                </div>
+                            </div>
+                        </div>
+                    </center>
                 </div>
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="onModalClose()" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
     <br />
-
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <button type="button" name="köttfärssås" onclick="addItem('köttfärssås')">+</button>
-                <button type="button" name="köttfärssås" onclick="delItem('köttfärssås')">-</button>
-                <p>+ 10:-</p>
-            </div>
-            <div class="col">
-                <p>Köttfärssås</p>
-            </div>
-            <div class="col">
-                <p id="quantity-köttfärssås">0</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <button type="button" name="kapris" onclick="addItem('kapris')">+</button>
-                <button type="button" name="kapris" onclick="delItem('kapris')">-</button>
-                <p>+ 5:-</p>
-            </div>
-            <div class="col">
-                <p>Kapris</p>
-            </div>
-            <div class="col">
-                <p id="quantity-kapris">0</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col"></div>
-            <div class="col">
-                <p id="total-price">0:-</p>
-            </div>
-            <div class="col"></div>
-        </div>
-    </div>
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
