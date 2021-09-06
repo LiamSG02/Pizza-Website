@@ -55,6 +55,10 @@
         {
             "iname": "vitlök",
             "price": 5
+        },
+        {
+            "iname": "kapris",
+            "price": 5
         }
     ]
 }

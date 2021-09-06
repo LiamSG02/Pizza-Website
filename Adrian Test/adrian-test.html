@@ -43,12 +43,42 @@
     </div>
     <br />
 
-    <button type="button" onclick="addItem('köttfärssås')" class="btn">+</button><p>KÖTTFÄRSSÅS</p>
-    <button type="button" onclick="delItem('köttfärssås')" class="btn">-</button>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <button type="button" name="köttfärssås" onclick="addItem('köttfärssås')">+</button>
+                <button type="button" name="köttfärssås" onclick="delItem('köttfärssås')">-</button>
+                <p>+ 10:-</p>
+            </div>
+            <div class="col">
+                <p>Köttfärssås</p>
+            </div>
+            <div class="col">
+                <p id="quantity-köttfärssås">0</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button type="button" name="kapris" onclick="addItem('kapris')">+</button>
+                <button type="button" name="kapris" onclick="delItem('kapris')">-</button>
+                <p>+ 5:-</p>
+            </div>
+            <div class="col">
+                <p>Kapris</p>
+            </div>
+            <div class="col">
+                <p id="quantity-kapris">0</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col">
+                <p id="total-price">0:-</p>
+            </div>
+            <div class="col"></div>
+        </div>
+    </div>
 
-    <button type="button" onclick="renderIngredienser()" class="btn">-</button>
-
-    <div class="container"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
