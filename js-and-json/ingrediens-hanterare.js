@@ -20,14 +20,14 @@ window.onload = function () {
 
 // Funktionerna hämtar json filen när den blir kallad asyncroniserat (samtidigt som annan kod)
 async function fetchPizzor() {
-    const pizzaRes = await fetch('pizzor.json');
+    const pizzaRes = await fetch('js-and-json/pizzor.json');
     newPizzaRes = await pizzaRes.json();
     pizzaData = newPizzaRes.pizza;
 
     console.log('Pizza data:', pizzaData);
 }
 async function fetchIngredienser() {
-    const itemRes = await fetch('ingredienser.json');
+    const itemRes = await fetch('js-and-json/ingredienser.json');
     newItemRes = await itemRes.json();
     itemData = newItemRes.ingrediens;
 
