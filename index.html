@@ -15,9 +15,11 @@
 
 	<header>
 		<a href="#" class="logo"><img src="images/Logo.svg" alt="Logo" width="100px; "><span></span></a>
+		<div class="menuToggle" onClick="toggleMenu();"></div>
 		<ul class="navigation">
-			<li><a href="#food-menu">Menu</a></li>
-			<li><a href="#about">About</a></li>
+			<li><a href="#banner" onClick="toggleMenu();">Home</a></li>
+			<li><a href="#food-menu" onClick="toggleMenu();">Menu</a></li>
+			<li><a href="#about" onClick="toggleMenu();">About</a></li>
 			<li><a href="#">Cart</a></li>
 		</ul>
 	</header>
@@ -40,6 +42,7 @@
 			Pizza Menu
 		</h2>
 		<div class="food-menu-container container">
+			<div class="col-sm-12">
 			<div class="food-menu-item">
 				<div class="food-image">
 					<img src="images/pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
@@ -48,16 +51,18 @@
 					<h2 class="food-title">Margherita</h2>
 					<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<p class="food-price float-left">Price: 89 SEK</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<button class="add-button float-right" onclick="checkPizza('margherita')"
 								data-toggle="modal" data-target="#myModal">Add to cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+			<div class="col-sm-12">
 			<div class="food-menu-item">
 				<div class="food-image">
 					<img src="images/pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
@@ -66,16 +71,18 @@
 					<h2 class="food-title">Altono</h2>
 					<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<p class="food-price float-left">Price: 89 SEK</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<button class="add-button float-right" onclick="checkPizza('altono')" data-toggle="modal"
 								data-target="#myModal">Add to cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+			<div class="col-sm-12">
 			<div class="food-menu-item">
 				<div class="food-image">
 					<img src="images/pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
@@ -84,16 +91,18 @@
 					<h2 class="food-title">Napolitana</h2>
 					<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<p class="food-price float-left">Price: 89 SEK</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<button class="add-button float-right" onclick="checkPizza('napolitana')"
 								data-toggle="modal" data-target="#myModal">Add to cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+			<div class="col-sm-12">
 			<div class="food-menu-item">
 				<div class="food-image">
 					<img src="images/pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
@@ -102,16 +111,18 @@
 					<h2 class="food-title">Big Ben</h2>
 					<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<p class="food-price float-left">Price: 89 SEK</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<button class="add-button float-right" onclick="checkPizza('big-ben')" data-toggle="modal"
 								data-target="#myModal">Add to cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+			<div class="col-sm-12">
 			<div class="food-menu-item">
 				<div class="food-image">
 					<img src="images/pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
@@ -120,16 +131,18 @@
 					<h2 class="food-title">Bolognese</h2>
 					<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<p class="food-price float-left">Price: 89 SEK</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<button class="add-button float-right" onclick="checkPizza('bolognese')" data-toggle="modal"
 								data-target="#myModal">Add to cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+			<div class="col-sm-12">
 			<div class="food-menu-item">
 				<div class="food-image">
 					<img src="images/pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
@@ -138,16 +151,18 @@
 					<h2 class="food-title">Toscana</h2>
 					<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<p class="food-price float-left">Price: 89 SEK</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<button class="add-button float-right" onclick="checkPizza('toscana')" data-toggle="modal"
 								data-target="#myModal">Add to cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+			<div class="col-sm-12">
 			<div class="food-menu-item">
 				<div class="food-image">
 					<img src="images/pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
@@ -156,16 +171,18 @@
 					<h2 class="food-title">Gorgonzola</h2>
 					<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<p class="food-price float-left">Price: 89 SEK</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<button class="add-button float-right" onclick="checkPizza('gorgonzola')"
 								data-toggle="modal" data-target="#myModal">Add to cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+			<div class="col-sm-12">
 			<div class="food-menu-item">
 				<div class="food-image">
 					<img src="images/pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
@@ -174,16 +191,18 @@
 					<h2 class="food-title">Valentino</h2>
 					<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<p class="food-price float-left">Price: 89 SEK</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<button class="add-button float-right" onclick="checkPizza('valentino')" data-toggle="modal"
 								data-target="#myModal">Add to cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+			<div class="col-sm-12">
 			<div class="food-menu-item">
 				<div class="food-image">
 					<img src="images/pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
@@ -192,16 +211,18 @@
 					<h2 class="food-title">Picasso</h2>
 					<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<p class="food-price float-left">Price: 89 SEK</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<button class="add-button float-right" onclick="checkPizza('picasso')" data-toggle="modal"
 								data-target="#myModal">Add to cart</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			</div>
+			<div class="col-sm-12">
 			<div class="food-menu-item">
 				<div class="food-image">
 					<img src="images/pizzabanner.jpg" width="100px" alt="Hawaii Pizza">
@@ -210,15 +231,16 @@
 					<h2 class="food-title">Frutti di mare</h2>
 					<p>I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza I love Pizza</p>
 					<div class="row">
-						<div class="col-6">
+						<div class="col-sm-6">
 							<p class="food-price float-left">Price: 89 SEK</p>
 						</div>
-						<div class="col-6">
+						<div class="col-sm-6">
 							<button class="add-button float-right" onclick="checkPizza('frutti-di-mare')" data-toggle="modal"
 								data-target="#myModal">Add to cart</button>
 						</div>
 					</div>
 				</div>
+			</div>
 			</div>
 
 
@@ -673,6 +695,7 @@
 					I love pizza I love pizza I love pizza I love pizza I love pizza I love pizza I love pizza I love
 					pizza </p>
 			</div>
+	
 			<div class="col50">
 				<div class="imgBx">
 					<img src="images/pizzabanner.jpg" alt="Pizza">
@@ -706,6 +729,14 @@
 			const header = document.querySelector('header');
 			header.classList.toggle("sticky", window.scrollY > 0);
 		});
+		
+		
+		 function toggleMenu(){
+			 const menuToggle = document.querySelector('.menuToggle')
+			 const navigation = document.querySelector('.navigation')
+			 menuToggle.classList.toggle('active');
+			 navigation.classList.toggle('active');
+		 }
 	</script>
 
 	<script src="/js-and-json/ingrediens-hanterare.js"></script>
