@@ -390,4 +390,12 @@ section {
 		font-size: 2.2em;
 		color: #fff;
 	}
+	.food-menu-item {
+		flex-direction: column;
+		text-align: center;
+	}
+	.food-menu-container img{
+		margin: auto;
+		
+	}
 }
