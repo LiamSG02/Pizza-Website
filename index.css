@@ -15,7 +15,8 @@ p {
 	color: #111;
 }
 
-
+/* Pizza bakgrunden/Jumbotron */
+/* Pizza bakgrunden/Jumbotron */
 .banner {
 	position: relative;
 	width: 100%;
@@ -158,6 +159,8 @@ footer {
 	color: #fff;
 }
 
+/* Sociala medier ikonerna i footer */
+/* Sociala medier ikonerna i footer */
 .socials {
 	list-style: none;
 	display: flex;
@@ -184,7 +187,8 @@ footer {
 .socials a:hover i {
 	color: aqua;
 }
-
+/* Den mörkare delen under footern */
+/* Den mörkare delen under footern */
 .footer-bottom {
 	background: #000;
 	width: 100vw;
