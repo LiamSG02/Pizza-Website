@@ -396,6 +396,7 @@ section {
 	}
 	.food-menu-container img{
 		margin: auto;
+		margin-bottom: 15px;
 		
 	}
 }
