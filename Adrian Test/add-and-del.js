@@ -34,36 +34,35 @@ async function fetchIngredienser() {
     console.log('Item data:', itemData);
 }
 
-function onModalClose() {
+// Denna funktionen kallas när modalen stängs ner och återställer alla "wuantitys" till 0
+function resetItems() {
     for (let i = 0; i < itemData.length; i++) {
         document.getElementById('quantity-' + itemData[i].iname).innerHTML = 0;
     }
+    vald = [];
 }
 
+// Denna funktionen kollar vilken pizza som är vald och lägger till de ingredienser som finns på
+// pizzan i arrayen "vald" och sätter deras "quantity" till 1
 function checkPizza(name) {
     for (i in pizzaData) {
         if (name == pizzaData[i].pname) {
             let pizzaIngrediens = pizzaData[i].ingredienser;
 
+            // Lägger till pizzapriset på totala priset och uppdaterar pizzaPrice till samma
             totPrice = pizzaData[i].price;
             pizzaPrice = pizzaData[i].price;
 
-            // Uppdaterar totala priset
+            // Uppdaterar totala priset i HTML dokumentet
             document.getElementById('total-price').innerHTML = totPrice + ':-';
 
-            // Loop for pizzaData
+            // Denna loop jämmför alla element i arrayen ingredienser och arrayen till pizzans ingredienser
             for (let n = 0; n < pizzaData[i].ingredienser.length; n++) {
-                // Loop for itemData
                 for (let j = 0; j < itemData.length; j++) {
-                    // Compare the element of each and
-                    // every element from both of the
-                    // arrays
-
                     if (pizzaIngrediens[n].iname === itemData[j].iname) {
                         vald.push(itemData[j].iname);
 
-                        console.log(vald);
-
+                        // Uppdaterar "quantityn" på varje ingrediens som är finns i båda arraysen till 1
                         document.getElementById('quantity-' + itemData[j].iname).innerHTML = 1;
                     }
                 }
@@ -157,6 +156,8 @@ function purchase() {
         alert(
             'Du betalade ' + totPrice + ':- för dina ingredienser!'
         );
+        resetItems();
+        document.getElementById('total-price').innerHTML = pizzaPrice + ':-';
     } else {
         alert('Du måste lägga till minst en ingrediens för att köpa!');
     }

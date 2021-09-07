@@ -41,7 +41,7 @@
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title">Modal Heading</h4>
-                    <button type="button" class="close" onclick="onModalClose()" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" onclick="resetItems()" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
@@ -187,6 +187,21 @@
                                 </div>
                             </div>
 
+                            <!-- PEPERONI RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="peperoni" onclick="addItem('peperoni')">+</button>
+                                    <button type="button" name="peperoni" onclick="delItem('peperoni')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Peperoni</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-peperoni">0</p>
+                                </div>
+                            </div>
+
                             <!-- TONFISK RADEN -->
                             <div class="row">
                                 <div class="col">
@@ -202,6 +217,66 @@
                                 </div>
                             </div>
 
+                            <!-- RÄKOR RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="räkor" onclick="addItem('räkor')">+</button>
+                                    <button type="button" name="räkor" onclick="delItem('räkor')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Räkor</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-räkor">0</p>
+                                </div>
+                            </div>
+
+                            <!-- MUSSLOR RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="musslor" onclick="addItem('musslor')">+</button>
+                                    <button type="button" name="musslor" onclick="delItem('musslor')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Musslor</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-musslor">0</p>
+                                </div>
+                            </div>
+
+                            <!-- CRABFISH RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="crabfish" onclick="addItem('crabfish')">+</button>
+                                    <button type="button" name="crabfish" onclick="delItem('crabfish')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Crabfish</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-crabfish">0</p>
+                                </div>
+                            </div>
+
+                            <!-- SVART KAVIAR RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="svart-kaviar" onclick="addItem('svart-kaviar')">+</button>
+                                    <button type="button" name="svart-kaviar" onclick="delItem('svart-kaviar')">-</button>
+                                    <p>+ 10:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Svart Kaviar</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-svart-kaviar">0</p>
+                                </div>
+                            </div>
+
                             <!-- LÖK RADEN -->
                             <div class="row">
                                 <div class="col">
@@ -214,6 +289,51 @@
                                 </div>
                                 <div class="col">
                                     <p id="quantity-lök">0</p>
+                                </div>
+                            </div>
+
+                            <!-- VITLÖK RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="vitlök" onclick="addItem('vitlök')">+</button>
+                                    <button type="button" name="vitlök" onclick="delItem('vitlök')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Vitlök</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-vitlök">0</p>
+                                </div>
+                            </div>
+
+                            <!-- TOMAT RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="tomat" onclick="addItem('tomat')">+</button>
+                                    <button type="button" name="tomat" onclick="delItem('tomat')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Tomat</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-tomat">0</p>
+                                </div>
+                            </div>
+
+                            <!-- SOLTORKAD TOMAT RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="soltorkad-tomat" onclick="addItem('soltorkad-tomat')">+</button>
+                                    <button type="button" name="soltorkad-tomat" onclick="delItem('soltorkad-tomat')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Soltorkad Tomat</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-soltorkad-tomat">0</p>
                                 </div>
                             </div>
 
@@ -247,6 +367,81 @@
                                 </div>
                             </div>
 
+                            <!-- PAPRIKA RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="paprika" onclick="addItem('paprika')">+</button>
+                                    <button type="button" name="paprika" onclick="delItem('paprika')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Paprika</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-paprika">0</p>
+                                </div>
+                            </div>
+
+                            <!-- KRONÄRTSKOCKA RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="kronärtskocka" onclick="addItem('kronärtskocka')">+</button>
+                                    <button type="button" name="kronärtskocka" onclick="delItem('kronärtskocka')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Kronärtskocka</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-kronärtskocka">0</p>
+                                </div>
+                            </div>
+
+                            <!-- SARDELLER RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="sardeller" onclick="addItem('sardeller')">+</button>
+                                    <button type="button" name="sardeller" onclick="delItem('sardeller')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Sardeller</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-sardeller">0</p>
+                                </div>
+                            </div>
+
+                            <!-- KAPRIS RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="kapris" onclick="addItem('kapris')">+</button>
+                                    <button type="button" name="kapris" onclick="delItem('kapris')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Kapris</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-kapris">0</p>
+                                </div>
+                            </div>
+
+                            <!-- BASILIKA RADEN -->
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" name="basilika" onclick="addItem('basilika')">+</button>
+                                    <button type="button" name="basilika" onclick="delItem('basilika')">-</button>
+                                    <p>+ 5:-</p>
+                                </div>
+                                <div class="col">
+                                    <p>Basilika</p>
+                                </div>
+                                <div class="col">
+                                    <p id="quantity-basilika">0</p>
+                                </div>
+                            </div>
+
                             <!-- DETTA VISAR TOTALA PRISET PÅ ALLA INGREDIENSERNA -->
                             <div class="row">
                                 <div class="col-sm-6">
@@ -262,7 +457,7 @@
 
                 <!-- Modal footer -->
                 <div class="modal-footer">
-                    <button type="button" onclick="onModalClose()" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    <button type="button" onclick="resetItems()" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
