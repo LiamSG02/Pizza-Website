@@ -23,7 +23,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center; 
-	background: url("pizzaban2.jpg");
+	background: url("images/pizzaban2.jpg");
 	background-size: cover;
 }
 
