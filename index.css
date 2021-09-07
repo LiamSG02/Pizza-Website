@@ -56,6 +56,10 @@ p {
 	transition: 0.5s;
 }
 
+.btn:hover {
+	letter-spacing: 6px;
+}
+
 header {
 	position: fixed;
 	top: 0;
