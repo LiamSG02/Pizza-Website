@@ -88,6 +88,7 @@ header .logo {
 	font-weight: 700;
 	font-size: 2em;
 	text-decoration: 0;
+
 }
 
 header.sticky .logo {
@@ -235,8 +236,8 @@ footer {
 
 .food-menu-container img {
 	display: block;
-	width: 250px;
-	height: 250px;
+	width: 300px;
+	height: 300px;
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: center;
@@ -244,9 +245,9 @@ footer {
 
 .food-menu-item {
 	display: flex;
-	flex: 1 1 600px;
 	justify-content: space-evenly;
 	margin-bottom: 3rem;
+	margin-right: 1rem;
 }
 
 .food-description {
