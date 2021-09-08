@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="LiamCSS.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<title>LiamTest</title>
+</head>
+
+<body>
+	
+	<header>
+		<a href="#" class="logo"><img src="Logo.svg" alt="Logo" width="100px; "><span></span></a>
+		<div class="menuToggle" onClick="toggleMenu();"></div>
+		<ul class="navigation">
+			<li><a href="#banner" onClick="toggleMenu();">Home</a></li>
+			<li><a href="#food-menu" onClick="toggleMenu();">Menu</a></li>
+			<li><a href="#about" onClick="toggleMenu();">About</a></li>
+			<li><a href="#">Cart</a></li>
+		</ul>
+	</header>
+	
+	
+	<!-- Banner / Jumbotron -->
+	<section class="banner" id="banner">
+		<div class="content">
+			<h2>Best Pizza</h2>
+			<p>I love pizza I love pizza I love pizza I love pizza I love pizza I love pizzaI love pizza I love pizza I
+				love pizza
+				I love pizza I love pizza I love pizza I love pizza I love pizza.</p>
+			<a href="#food-menu" class="btn">Menu</a>
+		</div>
+	</section>
+	
+	<br>
+
+	<!-- The Food Menu Section -->
+	<section id="food-menu">
+		<h2 class="food-menu-heading">
+			Pizza Menu
+		</h2>
+		<div class="food-menu-container container">
+			<div class="food-menu-item">
+				<div class="food-image">
+					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
+				</div>
+					<div class="food-description">
+						<h2 class="food-title">Margherita</h2>
+						<p>Klassisk, ost och tomatsås </p>
+						<p class="food-price">Pris: 89 SEK</p>
+								
+						<button class="add-button float-right" onclick="checkPizza('margherita')"
+                                        data-toggle="modal" data-target="#myModal">Add to cart</button>
+					</div>
+			</div>
+			<div class="food-menu-item">
+				<div class="food-image">
+					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
+				</div>
+					<div class="food-description">
+						<h2 class="food-title">Alonso</h2>
+						<p>Tonfisk och lök</p>
+						<p class="food-price">Pris: 89 SEK</p>
+								
+					<button class="add-button float-right" onclick="checkPizza('margherita')"
+                                        data-toggle="modal" data-target="#myModal">Add to cart</button>
+					</div>
+			</div>
+			<div class="food-menu-item">
+				<div class="food-image">
+					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
+				</div>
+					<div class="food-description">
+						<h2 class="food-title">Napolitana</h2>
+						<p>Sardeller, kapris och oliver</p>
+						<p class="food-price float-left">Pris: 89 SEK</p>
+								
+						
+					</div>
+			</div>
+			<div class="food-menu-item">
+				<div class="food-image">
+					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
+				</div>
+					<div class="food-description">
+						<h2 class="food-title">Big Ben</h2>
+						<p>Bacon, lök, ägg och oliver</p>
+						<p class="food-price">Pris: 89 SEK</p>
+								
+						
+					</div>
+			</div>
+			<div class="food-menu-item">
+				<div class="food-image">
+					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
+				</div>
+					<div class="food-description">
+						<h2 class="food-title">Bolognese</h2>
+						<p>Köttfärssås och lök</p>
+						<p class="food-price">Pris: 89 SEK</p>
+								
+					</div>
+			</div>
+			<div class="food-menu-item">
+				<div class="food-image">
+					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
+				</div>
+					<div class="food-description">
+						<h2 class="food-title">Toscana</h2>
+						<p>Räkor, kronärtskocka, lök och vitlök</p>
+						<p class="food-price">Pris: 89 SEK</p>
+								
+						
+					</div>
+			</div>
+			<div class="food-menu-item">
+				<div class="food-image">
+					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
+				</div>
+					<div class="food-description">
+						<h2 class="food-title">Gorgonzola</h2>
+						<p>Skinka, gorgonzola och tomat</p>
+						<p class="food-price">Pris: 89 SEK</p>
+								
+						
+					</div>
+			</div>
+			<div class="food-menu-item">
+				<div class="food-image">
+					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
+				</div>
+					<div class="food-description">
+						<h2 class="food-title">Valentino</h2>
+						<p>Peperoni, mozzarella, pamersan, soltorkad tomat, lök och basilika</p>
+						<p class="food-price">Pris: 89 SEK</p>
+								
+					</div>
+			</div>
+			<div class="food-menu-item">
+				<div class="food-image">
+					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
+				</div>
+					<div class="food-description">
+						<h2 class="food-title">Picasso</h2>
+						<p>Prosciutto, mozzarella, parmesan, tomat, oliver, paprika och basilika</p>
+						<p class="food-price">Pris: 89 SEK</p>
+								
+						
+					</div>
+			</div>
+			<div class="food-menu-item">
+				<div class="food-image">
+					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
+				</div>
+					<div class="food-description">
+						<h2 class="food-title">Rutti di mar</h2>
+						<p>Rökor, musslor, crabfish, tonfisk och svart kaviar</p>
+						<p class="food-price">Pris: 89 SEK</p>
+								
+						
+					</div>
+			</div>
+		</div>
+			
+			
+			
+	</section>
+	
+	<!-- Detta gör så när du scrollar så blir navbaren vit och följer med -->
+	<script type="text/javascript">
+		window.addEventListener('scroll', function () {
+			const header = document.querySelector('header');
+			header.classList.toggle("sticky", window.scrollY > 0);
+		});
+
+
+		function toggleMenu() {
+			const menuToggle = document.querySelector('.menuToggle')
+			const navigation = document.querySelector('.navigation')
+			menuToggle.classList.toggle('active');
+			navigation.classList.toggle('active');
+		}
+	</script>
+</body>
+</html>

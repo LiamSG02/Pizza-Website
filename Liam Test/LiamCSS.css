@@ -26,7 +26,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center; 
-	background: url("images/pizzaban2.jpg");
+	background: url("pizzaban2.jpg");
 	background-size: cover;
 }
 
@@ -88,6 +88,7 @@ header .logo {
 	font-weight: 700;
 	font-size: 2em;
 	text-decoration: 0;
+
 }
 
 header.sticky .logo {
@@ -244,9 +245,9 @@ footer {
 
 .food-menu-item {
 	display: flex;
-	flex: 1 1 600px;
 	justify-content: space-evenly;
 	margin-bottom: 3rem;
+	margin-right: 1rem;
 }
 
 .food-description {
