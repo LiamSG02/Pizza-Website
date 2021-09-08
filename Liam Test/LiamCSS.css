@@ -1,0 +1,404 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-shadow: border-box;
+	font-family: 'Poppins', sans-serif;
+	scroll-behavior: smooth;
+}
+
+p {
+	font-weight: 300;
+	color: #111;
+    font-size: 4vw;
+	font-size: 16px;
+}
+
+/* Pizza bakgrunden/Jumbotron */
+/* Pizza bakgrunden/Jumbotron */
+.banner {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center; 
+	background: url("pizzaban2.jpg");
+	background-size: cover;
+}
+
+.banner .content {
+	max-width: 900px;
+	text-align: center;
+}
+
+.banner .content h2 {
+	font-size: 5em;
+	color: #fff; 
+}
+
+.banner .content p {
+	font-size: 1em;
+	color: #fff;
+}
+
+/* THE RED MENU BUTTON */ 
+.btn {
+	font-size: 1em;
+	color: #fff;
+	background: #CA2627;
+	display: inline-block;
+	padding: 10px 30px; 
+	margin-top: 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	transition: 0.5s;
+}
+
+.btn:hover {
+	letter-spacing: 6px;
+}
+
+/* The Navbar/Header */
+header {
+	position: fixed;
+	top: 0;
+	left: 0 ;
+	width: 100%;
+	padding: 40px 100px;
+	z-index: 10000;
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center;
+	transition: 0.5s;
+}
+
+header .sticky {
+	background: #fff;
+	padding: 10px 100px;
+	box-shadow: 0 5px 20px rgba(0,0,0,05);
+}
+
+header .logo {
+	color: #fff;
+	font-weight: 700;
+	font-size: 2em;
+	text-decoration: 0;
+	float: left;
+}
+
+header.sticky .logo {
+	color: #111;
+}
+
+header .logo span {
+	color: #CA2627;
+}
+
+header .navigation {
+	position: relative;
+	display: flex;
+}
+
+header .navigation li {
+	list-style: none; 
+	margin-left: 30px;
+}
+
+header .navigation li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 300;
+}
+
+header.sticky .navigation li a {
+	color: #111;
+}
+
+header .navigation li a:hover {
+	color: #CA2627
+}
+
+/* Body Styling */
+button {
+	color: #fff;
+	background-color: #117964;
+	border-radius: 10px;
+	padding: 5px;
+}
+
+body {
+	overflow-x: hidden;
+}
+
+/* FOOTER FOOTER FOOTER */
+/* FOOTER FOOTER FOOTER */
+footer {
+	background: #111;
+	height: auto;
+	width: 100vw;
+	padding-top: 40px;
+	color: #fff;
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.footer-content h3 {
+	font-size: 1.8rem;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+
+.footer-content p {
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+	color: #fff;
+}
+
+/* Sociala medier ikonerna i footer */
+/* Sociala medier ikonerna i footer */
+.socials {
+	list-style: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+	color: #fff;
+}
+
+.socials li {
+	margin: 0 10px;
+}
+
+.socials a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.socials a i {
+	font-size: 1.1rem;
+	transition: color .4s ease;
+}
+
+.socials a:hover i {
+	color: aqua;
+}
+/* Den mörkare delen under footern */
+/* Den mörkare delen under footern */
+.footer-bottom {
+	background: #000;
+	width: 100vw;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footer-bottom p {
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+	color: #fff;
+}
+
+.footer-bottom span {
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+/*FOOD MENU STYLING */
+/*FOOD MENU STYLING */
+/*FOOD MENU STYLING */
+.food-menu-heading {
+	font-size: 4rem;
+	text-align: center;
+	font-weight: 400;
+	color: #666;
+}
+
+.food-menu-container {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 50px 0px 30px 0px;
+}
+
+.food-menu-container img {
+	display: block;
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.food-menu-item {
+	display: flex;
+	flex: 1 1 600px;
+	justify-content: space-evenly;
+	margin-bottom: 3rem;
+}
+
+.food-description {
+	margin: auto 1.5rem;
+}
+
+.food-title {
+	font-size: 2.2rem;
+	font-weight: 400;
+	color: #444;
+}
+
+.food-description p {
+	font-size: 1.4rem;
+	color: #555;
+	font-weight: 500;
+
+}
+
+.food-description .food-price {
+	color: #117964;
+	font-weight: 700;
+}
+
+/* ABOUT US PAGEEEEEEE */
+/* ABOUT US PAGEEEEEEE */
+/* ABOUT US PAGEEEEEEE */
+section {
+	padding-top: 100px;
+	padding-left: 300px;
+	padding-right: 300px;
+}
+
+.row {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px;
+}
+
+.row .col50 {
+	position: relative;
+	width: 48%
+}
+
+.titleText {
+	color: #111;
+	font-size: 2em;
+	font-weight: 300;
+}
+
+.titleText span {
+	color: #CA2627;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+.row .col50 .imgBx {
+	position: relative;
+	width: 100%;
+	min-height: 300px;
+}
+
+.row .col50 .imgBx img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* RESPONSIVE */
+@media(max-width:1024px){
+	header, header.sticky {
+		padding: 10px 20px;
+	}
+	header .navigation {
+		display: none;
+	}
+	header .navigation.active {
+		width: 100%;
+		height: 500px;
+		position: fixed;
+		top: 120px;
+		left: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		background: #fff;
+	}
+	header .navigation li {
+		margin-left: 0;
+	}
+	header .navigation li a {
+		color: #111;
+		font-size: 1.6em;
+	}
+	.menuToggle {
+		position: relative;
+		width: 40px;
+		height: 40px;
+		background: url(menu.png);
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+		cursor: pointer;
+	}
+	.menuToggle.active {
+		background: url(close.png);
+		background-size: 25px;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	header.sticky .menuToggle {
+		filter: invert(1);
+	}
+	section {
+		padding: 20px;
+	}
+	.banner .content h2 {
+		font-size: 3em;
+		color: #fff;
+	}
+	.row {
+		flex-direction: column;
+	}
+	.row .col50 {
+		position: relative;
+		width: 100%;
+	}
+	.row .col50 .imgBx {
+		height: 300px;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.banner .content h2 {
+		font-size: 2.2em;
+		color: #fff;
+	}
+	.food-menu-item {
+		flex-direction: column;
+		text-align: center;
+	}
+	.food-menu-container img{
+		margin: auto;
+		margin-bottom: 15px;
+		
+	}
+}
