@@ -36,9 +36,9 @@ async function fetchIngredienser() {
     console.log('Item data:', itemData);
 }
 
-function openModal() {
+function openModal(name) {
     resetItems();
-    checkPizza();
+    checkPizza(name);
 }
 
 // Denna funktionen kallas när modalen stängs ner och återställer alla "wuantitys" till 0
@@ -156,18 +156,5 @@ function delItem(name) {
                 return;
             }
         }
-    }
-}
-
-// "Köp" de ingredienser som är valda
-function purchase() {
-    if (totPrice > 0) {
-        alert(
-            'Du betalade ' + totPrice + ':- för dina ingredienser!'
-        );
-        resetItems();
-        document.getElementById('total-price').innerHTML = pizzaPrice + ':-';
-    } else {
-        alert('Du måste lägga till minst en ingrediens för att köpa!');
     }
 }

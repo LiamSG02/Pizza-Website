@@ -38,6 +38,7 @@ function purchaseClicked() {
 function removeCartItem(event) {
     var buttonClicked = event.target
     buttonClicked.parentElement.parentElement.remove()
+    console.log(buttonClicked)
     updateCartTotal()
 }
 
@@ -50,26 +51,49 @@ function quantityChanged(event) {
 }
 
 function addToCartClicked() {
-    var title = currentPizza
+    let currentPizzaCount = 0;
+
+    for (let i = 0; i < sessionStorage.length; i++) {
+
+        let keys = sessionStorage.key(i).split('-')
+
+        console.log(keys)
+        if (keys[1] == currentPizza) {
+            currentPizzaCount++
+        }
+    }
+
+    let thisPizzaData = [
+        {
+            "name": currentPizza,
+            "price": totPrice,
+            "ingredienser": vald
+        }
+    ];
+
+    sessionStorage.setItem('pizza-' + currentPizza + '-' + currentPizzaCount, JSON.stringify(thisPizzaData))
+
+    var name = currentPizza
     var price = totPrice
-    addItemToCart(title, price)
+
+    addItemToCart(name, price)
     updateCartTotal()
 }
 
-function addItemToCart(title, price) {
+function addItemToCart(name, price) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-    for (var i = 0; i < cartItemNames.length; i++) {
-        if (cartItemNames[i].innerText == title) {
+    /* for (var i = 0; i < cartItemNames.length; i++) {
+        if (cartItemNames[i].innerText == name) {
             alert('This item is already added to the cart')
             return
         }
-    }
+    } */
     var cartRowContents = `
         <div class="cart-item cart-column">
-            <span class="cart-item-title">${title}</span>
+            <span class="cart-item-title">${name}</span>
         </div>
         <span class="cart-price cart-column">${price}</span>
         <div class="cart-quantity cart-column">
