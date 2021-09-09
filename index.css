@@ -89,6 +89,11 @@ header .logo {
 	font-size: 2em;
 	text-decoration: 0;
 
+	float: left;
+}
+
+header .cart {
+	float: right;
 }
 
 header.sticky .logo {

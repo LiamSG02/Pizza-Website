@@ -5,6 +5,8 @@ let data;
 var totPrice = 0;
 var pizzaPrice = 0;
 
+var currentPizza;
+
 // Skapar variabel för antal till de olika ingredienserna
 let quantityAdd;
 let quantityDel;
@@ -52,6 +54,8 @@ function checkPizza(name) {
             // Lägger till pizzapriset på totala priset och uppdaterar pizzaPrice till samma
             totPrice = pizzaData[i].price;
             pizzaPrice = pizzaData[i].price;
+
+            currentPizza = pizzaData[i].pname;
 
             // Uppdaterar totala priset i HTML dokumentet
             document.getElementById('total-price').innerHTML = totPrice + ':-';

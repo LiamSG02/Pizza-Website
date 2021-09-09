@@ -26,14 +26,6 @@ function ready() {
     document.getElementsByClassName('btn-purchase')[0].addEventListener('click', purchaseClicked)
 }
 
-(function(){
- 
-    $("#cart").on("click", function() {
-      $(".shopping-cart").toggle();
-    });
-    
-  })();
-
 function purchaseClicked() {
     alert('Thank you for your purchase')
     var cartItems = document.getElementsByClassName('cart-items')[0]
