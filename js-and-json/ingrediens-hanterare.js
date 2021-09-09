@@ -36,6 +36,11 @@ async function fetchIngredienser() {
     console.log('Item data:', itemData);
 }
 
+function openModal() {
+    resetItems();
+    checkPizza();
+}
+
 // Denna funktionen kallas när modalen stängs ner och återställer alla "wuantitys" till 0
 function resetItems() {
     for (let i = 0; i < itemData.length; i++) {
