@@ -89,6 +89,11 @@ header .logo {
 	font-size: 2em;
 	text-decoration: 0;
 
+	float: left;
+}
+
+header .cart {
+	float: right;
 }
 
 header.sticky .logo {
@@ -245,9 +250,14 @@ footer {
 
 .food-menu-item {
 	display: flex;
+	align-content: center;
 	justify-content: space-evenly;
 	margin-bottom: 3rem;
 	margin-right: 1rem;
+	border-style: groove;
+	border-color: #CA2627;
+	padding: 10px;
+	width: 100%;
 }
 
 .food-description {
@@ -387,6 +397,17 @@ section {
 	}
 }
 
+@media (min-width: 1024px) {
+	.food-image {
+		width: 100%;
+		float: left;
+	}
+	.food-description {
+		width: 100%;
+		float: right;
+	}
+}
+
 @media (max-width: 480px) {
 	.banner .content h2 {
 		font-size: 2.2em;
@@ -395,10 +416,17 @@ section {
 	.food-menu-item {
 		flex-direction: column;
 		text-align: center;
+		align-content: center;
 	}
 	.food-menu-container img{
 		margin: auto;
 		margin-bottom: 15px;
 		
+	}
+	.food-description {
+		align-content: center;
+	}
+	.food-image {
+		align-content: center;
 	}
 }
