@@ -25,15 +25,11 @@ async function fetchPizzor() {
     const pizzaRes = await fetch('js-and-json/pizzor.json');
     newPizzaRes = await pizzaRes.json();
     pizzaData = newPizzaRes.pizza;
-
-    console.log('Pizza data:', pizzaData);
 }
 async function fetchIngredienser() {
     const itemRes = await fetch('js-and-json/ingredienser.json');
     newItemRes = await itemRes.json();
     itemData = newItemRes.ingrediens;
-
-    console.log('Item data:', itemData);
 }
 
 function openModal(name) {

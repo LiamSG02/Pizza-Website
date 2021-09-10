@@ -35,10 +35,36 @@ function purchaseClicked() {
     updateCartTotal()
 }
 
-function removeCartItem(event) {
-    var buttonClicked = event.target
+function removeCartItem(name) {
+
+    let data = document.getElementById('pizza-item-' + name).innerHTML
+    console.log(name)
+    data = data.split(' ')
+    data.pop();
+
+    for (let i = 0; i < sessionStorage.length; i++) {
+
+        var storedItem = sessionStorage.getItem(sessionStorage.key(i))
+        console.log(storedItem)
+
+        if (typeof storedItem === "string") {
+
+            var storedItem = JSON.parse(storedItem)
+            console.log(storedItem)
+
+            console.log(storedItem.name, '-', name)
+            console.log(storedItem.ingredienser, '-', data)
+
+            if (storedItem[0].name == name && storedItem[0].ingredienser == data) {
+                console.log('hej')
+                sessionStorage.removeItem(sessionStorage.key(i))
+            }
+        }
+    }
+
+    var buttonClicked = document.getElementById('remove-' + name)
+
     buttonClicked.parentElement.parentElement.remove()
-    console.log(buttonClicked)
     updateCartTotal()
 }
 
@@ -57,7 +83,6 @@ function addToCartClicked() {
 
         let keys = sessionStorage.key(i).split('-')
 
-        console.log(keys)
         if (keys[1] == currentPizza) {
             currentPizzaCount++
         }
@@ -73,36 +98,82 @@ function addToCartClicked() {
 
     sessionStorage.setItem('pizza-' + currentPizza + '-' + currentPizzaCount, JSON.stringify(thisPizzaData))
 
-    var name = currentPizza
-    var price = totPrice
+    var data = thisPizzaData
 
-    addItemToCart(name, price)
+    addItemToCart(data)
     updateCartTotal()
 }
 
-function addItemToCart(name, price) {
+function firstLetterUpper(string) {
+
+    let chars = string.split('')
+    let firstChar = chars[0].toUpperCase();
+    chars[0] = firstChar;
+
+    string = chars.join('');
+    return string;
+}
+
+function generateDropdown(name, data) {
+
+    var dropRow = document.createElement('div')
+
+    for (let i = 0; i < data.length; i++) {
+        var dropContent = `${data[i] + ' '}`
+
+        dropRow.innerHTML = dropRow.innerHTML + dropContent;
+    };
+
+    HTMLtext = `
+        <div class="container">
+            <h4>Ingredienser</h4>
+            <div class="pizza-items" id="pizza-item-${name}">${dropRow.innerHTML}</div>
+        </div>
+        `
+
+    return HTMLtext;
+}
+
+var cartItemNames = [];
+var cartItemIngredienser = [];
+
+function addItemToCart(data) {
     var cartRow = document.createElement('div')
     cartRow.classList.add('cart-row')
     var cartItems = document.getElementsByClassName('cart-items')[0]
     var cartItemNames = cartItems.getElementsByClassName('cart-item-title')
-    /* for (var i = 0; i < cartItemNames.length; i++) {
+
+    let dataName = data[0].name;
+    let name = firstLetterUpper(dataName);
+
+    let pizzaItems = data[0].ingredienser;
+
+    let price = data[0].price;
+
+    for (var i = 0; i < cartItemNames.length; i++) {
         if (cartItemNames[i].innerText == name) {
             alert('This item is already added to the cart')
             return
         }
-    } */
-    var cartRowContents = `
+    }
+
+    var nameAndPrice = `
         <div class="cart-item cart-column">
             <span class="cart-item-title">${name}</span>
         </div>
-        <span class="cart-price cart-column">${price}</span>
+        <span class="cart-price cart-column">${price + ":-"}</span>s`;
+
+    var ingrediensDrop = generateDropdown(dataName, pizzaItems);
+
+    console.log(pizzaItems)
+
+    var lastPart = `
         <div class="cart-quantity cart-column">
             <input class="cart-quantity-input" type="number" value="1">
-            <button class="btn btn-danger" type="button">REMOVE</button>
-        </div>`
-    cartRow.innerHTML = cartRowContents
+            <button class="btn btn-danger" id="remove-${dataName}" onclick="removeCartItem('${dataName}')" type="button">REMOVE</button>
+        </div>`;
+    cartRow.innerHTML = nameAndPrice + ingrediensDrop + lastPart;
     cartItems.append(cartRow)
-    cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeCartItem)
     cartRow.getElementsByClassName('cart-quantity-input')[0].addEventListener('change', quantityChanged)
 }
 
