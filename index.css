@@ -11,7 +11,7 @@
 }
 
 p {
-	font-weight: 300;
+	font-weight: 400;
 	color: #111;
     font-size: 4vw;
 	font-size: 16px;
@@ -133,6 +133,9 @@ button {
 	color: #fff;
 	background-color: #117964;
 	border-radius: 10px;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
 	padding: 5px;
 }
 
@@ -143,7 +146,57 @@ body {
 /* MODAL STYLE */
 #myModal {
 	z-index: 1000000;
+	
 }
+.modal-header {
+	background: #CA2627;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera */
+	color: white;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 4px;
+	border-bottom-width: 0px;
+	
+}
+.modal-body {
+	background: #CA2627;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera */
+	
+	border-style: solid;
+	border-color: #fff;
+	border-width: 4px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+}
+.modal-body p {
+	font-weight: 400;
+	font-size: 2.2rem;
+	color: #ECA441;
+}
+.modal-body button {
+	font-weight: 200;
+	font-size: 25px;
+	height: 50px;
+	width: 50px;
+}
+.modal-footer {
+	background: #CA2627;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera */
+
+	border-style: solid;
+	border-color: #fff;
+	border-width: 4px;
+	border-top-width: 0px;
+}
+.modal-footer p {
+	font-weight: 400;
+	font-size: 2.2rem;
+	color: #ECA441;
+}
+
 
 /* FOOTER FOOTER FOOTER */
 /* FOOTER FOOTER FOOTER */
