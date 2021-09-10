@@ -11,7 +11,7 @@
 }
 
 p {
-	font-weight: 300;
+	font-weight: 400;
 	color: #111;
     font-size: 4vw;
 	font-size: 16px;
@@ -49,7 +49,7 @@ p {
 .btn {
 	font-size: 1em;
 	color: #fff;
-	background: #CA2627;
+	background: #418CD2;
 	display: inline-block;
 	padding: 10px 30px; 
 	margin-top: 20px;
@@ -70,7 +70,7 @@ header {
 	left: 0 ;
 	width: 100%;
 	padding: 40px 100px;
-	z-index: 10000;
+	z-index: 100;
 	display: flex; 
 	justify-content: space-between; 
 	align-items: center;
@@ -131,14 +131,72 @@ header .navigation li a:hover {
 /* Body Styling */
 button {
 	color: #fff;
-	background-color: #117964;
+	background-color: #418CD2;
 	border-radius: 10px;
+	border-color: black;
+	border-style: solid;
+	border-width: 2px;
 	padding: 5px;
 }
 
 body {
 	overflow-x: hidden;
 }
+
+/* MODAL STYLE */
+#myModal {
+	z-index: 1000000;
+	
+}
+.modal-header {
+	background: #CA2627;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera */
+	color: white;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 4px;
+	border-bottom-width: 0px;
+	
+}
+.modal-body {
+	background: #CA2627;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera */
+	
+	border-style: solid;
+	border-color: #fff;
+	border-width: 4px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+}
+.modal-body p {
+	font-weight: 400;
+	font-size: 2.2rem;
+	color: #ECA441;
+}
+.modal-body button {
+	font-weight: 200;
+	font-size: 25px;
+	height: 50px;
+	width: 50px;
+}
+.modal-footer {
+	background: #CA2627;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera */
+
+	border-style: solid;
+	border-color: #fff;
+	border-width: 4px;
+	border-top-width: 0px;
+}
+.modal-footer p {
+	font-weight: 400;
+	font-size: 2.2rem;
+	color: #ECA441;
+}
+
 
 /* FOOTER FOOTER FOOTER */
 /* FOOTER FOOTER FOOTER */
@@ -226,6 +284,7 @@ footer {
 /*FOOD MENU STYLING */
 /*FOOD MENU STYLING */
 /*FOOD MENU STYLING */
+
 .food-menu-heading {
 	font-size: 4rem;
 	text-align: center;
@@ -243,6 +302,9 @@ footer {
 	display: block;
 	width: 300px;
 	height: 300px;
+	border-style: solid;
+	border-color: #fff;
+	border-width: 4px;
 	border-radius: 50%;
 	object-fit: cover;
 	object-position: center;
@@ -254,9 +316,16 @@ footer {
 	justify-content: space-evenly;
 	margin-bottom: 3rem;
 	margin-right: 1rem;
-	border-style: groove;
-	border-color: #CA2627;
-	padding: 10px;
+	border-style: solid;
+	border-color: #418CD2;
+	border-width: 4px;
+	box-shadow: 0 5px 20px rgba(0,0,0,05);
+	/* background: #CA2627;  /* fallback for old browsers */
+	/*background: -webkit-linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* Chrome 10-25, Safari 5.1-6 */
+	/*background: linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+	 background-color: #ECA441;
+	padding: 20px;
 	width: 100%;
 }
 
@@ -267,19 +336,24 @@ footer {
 .food-title {
 	font-size: 2.2rem;
 	font-weight: 400;
-	color: #444;
+	color: #fff;
 }
 
 .food-description p {
 	font-size: 1.4rem;
-	color: #555;
+	color: #fff;
 	font-weight: 500;
 
 }
 
 .food-description .food-price {
-	color: #117964;
+	color: #418CD2;
 	font-weight: 700;
+}
+
+hr {
+	height: 2px;
+	background-color: #ECA441;
 }
 
 /* ABOUT US PAGEEEEEEE */
@@ -311,7 +385,7 @@ section {
 }
 
 .titleText span {
-	color: #CA2627;
+	color: #ECA441;
 	font-weight: 700;
 	font-size: 1.5em;
 }

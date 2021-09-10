@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="LiamCSS.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-
+	
 </head>
 
 <body>
@@ -18,8 +18,8 @@
 		<div class="menuToggle" onClick="toggleMenu();"></div>
 		<ul class="navigation">
 			<li class="nav-item dropdown dropleft">
-				<a class="nav-link dropdown-toggle cart" href="#" id="navbardrop" data-toggle="dropdown">
-					Cart
+				<a class="nav-link dropdown-toggle cart"  href="#" id="navbardrop" data-toggle="dropdown">
+					<i class="fa fa-shopping-cart"></i> Cart
 				</a>
 
 				<div class="dropdown-menu">
@@ -40,7 +40,7 @@
 	<!-- Banner / Jumbotron -->
 	<section class="banner" id="banner">
 		<div class="content">
-			<h2>Pizzeria Venezia</h2>
+			<h2 class="pizzaV">Pizzeria Venezia</h2>
 			<p><strong>Öppettider</strong></p>
 			<p>Måndag - Torsdag 11:00 - 21:00</p>
 			<p>Fredag - Lördag 11:00 - 4:00</p>
@@ -53,11 +53,13 @@
 
 	<!-- The Food Menu Section -->
 	<section id="food-menu">
+	
 		<h2 class="food-menu-heading">
 			Pizza Menu
 		</h2>
 		<div class="food-menu-container container">
 			<div class="food-menu-item">
+				<hr>
 				<div class="food-image">
 					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
@@ -66,24 +68,30 @@
 					<p>Klassisk, ost och tomatsås </p>
 					<p class="food-price">Pris: 89 SEK</p>
 
-					<button class="add-button" onclick="checkPizza('margherita')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('margherita')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 				</div>
+				<hr>
 			</div>
+
 			<div class="food-menu-item">
+				<hr>
 				<div class="food-image">
 					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
 				<div class="food-description">
-					<h2 class="food-title">Alonso</h2>
+					<h2 class="food-title">Altono</h2>
 					<p>Tonfisk och lök</p>
 					<p class="food-price">Pris: 89 SEK</p>
 
-					<button class="add-button" onclick="checkPizza('alonso')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('altono')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 				</div>
+				<hr>
 			</div>
+
 			<div class="food-menu-item">
+				<hr>
 				<div class="food-image">
 					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
@@ -92,11 +100,14 @@
 					<p>Sardeller, kapris och oliver</p>
 					<p class="food-price">Pris: 89 SEK</p>
 
-					<button class="add-button" onclick="checkPizza('napolitana')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('napolitana')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 				</div>
+				<hr>
 			</div>
+
 			<div class="food-menu-item">
+				<hr>
 				<div class="food-image">
 					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
@@ -105,11 +116,14 @@
 					<p>Bacon, lök, ägg och oliver</p>
 					<p class="food-price">Pris: 89 SEK</p>
 
-					<button class="add-button" onclick="checkPizza('big-ben')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('big-ben')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 				</div>
+				<hr>
 			</div>
+
 			<div class="food-menu-item">
+				<hr>
 				<div class="food-image">
 					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
@@ -117,11 +131,14 @@
 					<h2 class="food-title">Bolognese</h2>
 					<p>Köttfärssås och lök</p>
 					<p class="food-price">Pris: 89 SEK</p>
-					<button class="add-button" onclick="checkPizza('bolognese')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('bolognese')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 				</div>
+				<hr>
 			</div>
+
 			<div class="food-menu-item">
+				<hr>
 				<div class="food-image">
 					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
@@ -129,12 +146,15 @@
 					<h2 class="food-title">Toscana</h2>
 					<p>Räkor, kronärtskocka, lök och vitlök</p>
 					<p class="food-price">Pris: 89 SEK</p>
-					<button class="add-button" onclick="checkPizza('toscana')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('toscana')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 
 				</div>
+				<hr>
 			</div>
+
 			<div class="food-menu-item">
+				<hr>
 				<div class="food-image">
 					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
@@ -142,12 +162,15 @@
 					<h2 class="food-title">Gorgonzola</h2>
 					<p>Skinka, gorgonzola och tomat</p>
 					<p class="food-price">Pris: 89 SEK</p>
-					<button class="add-button" onclick="checkPizza('gorgonzola')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('gorgonzola')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 
 				</div>
+				<hr>
 			</div>
+
 			<div class="food-menu-item">
+				<hr>
 				<div class="food-image">
 					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
@@ -155,11 +178,14 @@
 					<h2 class="food-title">Valentino</h2>
 					<p>Peperoni, mozzarella, pamersan, soltorkad tomat, lök och basilika</p>
 					<p class="food-price">Pris: 89 SEK</p>
-					<button class="add-button" onclick="checkPizza('valentino')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('valentino')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 				</div>
+				<hr>
 			</div>
+
 			<div class="food-menu-item">
+				<hr>
 				<div class="food-image">
 					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
@@ -167,23 +193,27 @@
 					<h2 class="food-title">Picasso</h2>
 					<p>Prosciutto, mozzarella, parmesan, tomat, oliver, paprika och basilika</p>
 					<p class="food-price">Pris: 89 SEK</p>
-					<button class="add-button" onclick="checkPizza('picasso')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('picasso')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 
 				</div>
+				<hr>
 			</div>
+
 			<div class="food-menu-item">
+				<hr>
 				<div class="food-image">
 					<img src="pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
 				<div class="food-description">
-					<h2 class="food-title">Rutti di mar</h2>
+					<h2 class="food-title">Rutti di Mare</h2>
 					<p>Räkor, musslor, crabfish, tonfisk och svart kaviar</p>
 					<p class="food-price">Pris: 89 SEK</p>
-					<button class="add-button" onclick="checkPizza('rutti-di-mar')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('rutti-di-mare')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 
 				</div>
+				<hr>
 			</div>
 		</div>
 
@@ -198,12 +228,13 @@
 
 				<!-- Modal Header -->
 				<div class="modal-header">
-					<h4 class="modal-title">Modal Heading</h4>
+					<h4 class="modal-title">Extra Tillägg</h4>
 					<button type="button" class="close" onclick="resetItems()" data-dismiss="modal">&times;</button>
 				</div>
 
 				<!-- Modal body -->
 				<div class="modal-body">
+					<hr>
 					<!-- CONTAINER FÖR ALLA INGREDIENSER -->
 					<center>
 						<div class="container">
@@ -605,25 +636,19 @@
 									<p id="quantity-basilika">0</p>
 								</div>
 							</div>
-
-							<!-- DETTA VISAR TOTALA PRISET PÅ ALLA INGREDIENSERNA -->
-							<div class="row">
-								<div class="col-sm-6">
-									<p id="total-price">0:-</p>
-								</div>
-								<div class="col-sm-6">
-									<button class="button shop-item-button" onclick="resetItems()" type="button"
-										data-dismiss="modal">Lägg i kundvagnen</button>
-								</div>
-							</div>
 						</div>
 					</center>
+					<hr>
 				</div>
 
 				<!-- Modal footer -->
 				<div class="modal-footer">
-					<button type="button" onclick="resetItems()" class="btn btn-danger"
-						data-dismiss="modal">Close</button>
+					<div>
+						<p id="total-price">0:-</p>
+					</div>
+					<div>
+						<button class="button" onclick="addToCartClicked()">Lägg i kundvagnen</button>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -690,7 +715,6 @@
 			const header = document.querySelector('header');
 			header.classList.toggle("sticky", window.scrollY > 0);
 		});
-
 
 		function toggleMenu() {
 			const menuToggle = document.querySelector('.menuToggle')
