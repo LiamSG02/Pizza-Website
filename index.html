@@ -16,7 +16,7 @@
 	<header>
 		<a href="#" class="logo"><img src="images/Logo.svg" alt="Logo" width="100px; "><span></span></a>
 		<div class="menuToggle" onClick="toggleMenu();"></div>
-		<ul class="navigation">
+		<div class="navigation">
 			<li class="nav-item dropdown dropleft">
 				<a class="nav-link dropdown-toggle cart"  href="#" id="navbardrop" data-toggle="dropdown">
 					<i class="fa fa-shopping-cart"></i> Cart
@@ -34,7 +34,7 @@
 					</section>
 				</div>
 			</li>
-		</ul>
+		</div>
 	</header>
 
 	<!-- Banner / Jumbotron -->
@@ -205,10 +205,10 @@
 					<img src="images/pizzabanner.jpg" alt="Hawaii Pizza">
 				</div>
 				<div class="food-description">
-					<h2 class="food-title">Rutti di Mare</h2>
+					<h2 class="food-title">Frutti di Mare</h2>
 					<p>Räkor, musslor, crabfish, tonfisk och svart kaviar</p>
 					<p class="food-price">Pris: 89 SEK</p>
-					<button class="add-button" onclick="openModal('rutti-di-mare')" data-toggle="modal"
+					<button class="add-button" onclick="openModal('frutti-di-mare')" data-toggle="modal"
 						data-target="#myModal">Add to cart</button>
 
 				</div>
@@ -724,7 +724,8 @@
 	</script>
 
 	<script src="/js-and-json/ingrediens-hanterare.js"></script>
-	<script src="/js-and-json/store.js"></script>
+	<script src="/js-and-json/kundvagn.js"></script>
+	<script src="/js-and-json/checkout.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

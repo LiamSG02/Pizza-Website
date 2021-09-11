@@ -1,108 +1,108 @@
 {
     "ingrediens": [
         {
-            "iname": "riven-ost",
-            "price": 5
+            "namn": "riven-ost",
+            "pris": 5
         },
         {
-            "iname": "ägg",
-            "price": 10
+            "namn": "ägg",
+            "pris": 10
         },
         {
-            "iname": "köttfärssås",
-            "price": 10
+            "namn": "köttfärssås",
+            "pris": 10
         },
         {
-            "iname": "bacon",
-            "price": 10
+            "namn": "bacon",
+            "pris": 10
         },
         {
-            "iname": "räkor",
-            "price": 10
+            "namn": "räkor",
+            "pris": 10
         },
         {
-            "iname": "musslor",
-            "price": 10
+            "namn": "musslor",
+            "pris": 10
         },
         {
-            "iname": "crabfish",
-            "price": 10
+            "namn": "crabfish",
+            "pris": 10
         },
         {
-            "iname": "tonfisk",
-            "price": 10
+            "namn": "tonfisk",
+            "pris": 10
         },
         {
-            "iname": "svart-kaviar",
-            "price": 10
+            "namn": "svart-kaviar",
+            "pris": 10
         },
         {
-            "iname": "skinka",
-            "price": 10
+            "namn": "skinka",
+            "pris": 10
         },
         {
-            "iname": "lufttorkad-skinka",
-            "price": 10
+            "namn": "lufttorkad-skinka",
+            "pris": 10
         },
         {
-            "iname": "peperoni",
-            "price": 10
+            "namn": "peperoni",
+            "pris": 10
         },
         {
-            "iname": "tomatsås",
-            "price": 5
+            "namn": "tomatsås",
+            "pris": 5
         },
         {
-            "iname": "tomat",
-            "price": 5
+            "namn": "tomat",
+            "pris": 5
         },
         {
-            "iname": "soltorkad-tomat",
-            "price": 5
+            "namn": "soltorkad-tomat",
+            "pris": 5
         },
         {
-            "iname": "mozzarella",
-            "price": 5
+            "namn": "mozzarella",
+            "pris": 5
         },
         {
-            "iname": "parmesan",
-            "price": 5
+            "namn": "parmesan",
+            "pris": 5
         },
         {
-            "iname": "lök",
-            "price": 5
+            "namn": "lök",
+            "pris": 5
         },
         {
-            "iname": "vitlök",
-            "price": 5
+            "namn": "vitlök",
+            "pris": 5
         },
         {
-            "iname": "kapris",
-            "price": 5
+            "namn": "kapris",
+            "pris": 5
         },
         {
-            "iname": "sardeller",
-            "price": 5
+            "namn": "sardeller",
+            "pris": 5
         },
         {
-            "iname": "oliver",
-            "price": 5
+            "namn": "oliver",
+            "pris": 5
         },
         {
-            "iname": "kronärtskocka",
-            "price": 5
+            "namn": "kronärtskocka",
+            "pris": 5
         },
         {
-            "iname": "gorgonzola",
-            "price": 5
+            "namn": "gorgonzola",
+            "pris": 5
         },
         {
-            "iname": "basilika",
-            "price": 5
+            "namn": "basilika",
+            "pris": 5
         },
         {
-            "iname": "paprika",
-            "price": 5
+            "namn": "paprika",
+            "pris": 5
         }
     ]
 }
