@@ -315,7 +315,6 @@ footer {
 	align-content: center;
 	justify-content: space-evenly;
 	margin-bottom: 3rem;
-	margin-right: 1rem;
 	border-style: solid;
 	border-color: #fff;
 	border-width: 4px;
@@ -325,7 +324,7 @@ footer {
 	background: linear-gradient(to left, #7e1919, #CA2627, #CA2627, #CA2627, #7e1919); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 	/* background-color: #CA2627; */
-	padding: 20px;
+	padding: 6px;
 	width: 100%;
 }
 
