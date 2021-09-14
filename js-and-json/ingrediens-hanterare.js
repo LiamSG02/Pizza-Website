@@ -16,11 +16,15 @@ async function fetchPizzor() {
     const pizzaRes = await fetch('js-and-json/pizzor.json');
     let nyPizzaRes = await pizzaRes.json();
     pizzaData = nyPizzaRes.pizza;
+
+    console.log(pizzaData, 'har laddats in!')
 }
 async function fetchIngredienser() {
     const ingrediensRes = await fetch('js-and-json/ingredienser.json');
     let nyIngrediensRes = await ingrediensRes.json();
     ingrediensData = nyIngrediensRes.ingrediens;
+
+    console.log(ingrediensData, 'har laddats in!')
 }
 
 // Definierar variabel för totalpriset
