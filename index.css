@@ -171,15 +171,15 @@ body {
 	border-bottom-width: 0px;
 }
 .modal-body p {
-	font-weight: 400;
-	font-size: 2.2rem;
+	font-weight: 200;
+	font-size: 1.2rem;
 	color: #ECA441;
 }
 .modal-body button {
 	font-weight: 200;
-	font-size: 25px;
-	height: 50px;
-	width: 50px;
+	font-size: 15px;
+	height: 34px;
+	width: 34px;
 }
 .modal-footer {
 	background: #CA2627;  /* fallback for old browsers */
@@ -192,8 +192,8 @@ body {
 	border-top-width: 0px;
 }
 .modal-footer p {
-	font-weight: 400;
-	font-size: 2.2rem;
+	font-weight: 200;
+	font-size: 1.2rem;
 	color: #ECA441;
 }
 
