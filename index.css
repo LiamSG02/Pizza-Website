@@ -173,7 +173,7 @@ body {
 .modal-body p {
 	font-weight: 200;
 	font-size: 1.2rem;
-	color: #ECA441;
+	color: #fff;
 }
 .modal-body button {
 	font-weight: 200;
@@ -194,7 +194,7 @@ body {
 .modal-footer p {
 	font-weight: 200;
 	font-size: 1.2rem;
-	color: #ECA441;
+	color: #fff;
 }
 
 
@@ -352,7 +352,7 @@ footer {
 
 hr {
 	height: 2px;
-	background-color: #ECA441;
+	background-color: #fff;
 }
 
 /* ABOUT US PAGEEEEEEE */
